@@ -8,7 +8,7 @@ h1 {
 }
 
 .blockquote{
-    box-shadow : -6px 2px black;
+    box-shadow : -6px 2px 4px black ;
     font-size : larger;
 }
 
@@ -29,7 +29,33 @@ h1 {
   .course-tables tr:nth-child(odd) {
     background-color: #66FF99;
  }
-  
+
+ .small-letters{
+  text-transform: lowercase;
+ }
+
   th, td {
     padding: 5px;
   }
+
+/* Q3 */
+#menu ul{
+  list-style: none;
+}
+
+li ul {
+  display: none;
+}
+
+li:hover > ul {
+  display:block;
+}
+
+
+/* Q4 */
+
+.column{
+  width: 320px;
+  float:left;
+  padding: 5px;
+}
