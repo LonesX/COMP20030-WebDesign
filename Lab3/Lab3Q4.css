@@ -1,0 +1,35 @@
+/* Q4 */
+.logo{
+    width:5%;
+  }
+  
+  .header{
+    color:white;
+  }
+  
+  Body{
+    background-image: url(https://wallpaperaccess.com/full/795912.jpg);
+    background-color: black;
+    background-repeat:no-repeat;
+    background-size: cover;
+  } 
+  
+  .Q4Footer{
+    color:white;
+    font-size: 150%;
+  }
+  
+  form{
+    float:right;
+  }
+  
+  main{
+    font-size : 150%;
+    color: white;
+  }
+  
+  #input{
+    width:350px;
+    border: 3px solid red;
+    
+  }
