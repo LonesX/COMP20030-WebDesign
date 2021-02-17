@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <Title>Q2</Title>
+    <meta charset="UTF-8">
+    <script>
+        
+window.onload = function(){
+
+b1.addEventListener("click", function(){
+            var tb1 = (document.querySelector('#tb1').value);
+            var tb2 = (document.querySelector('#tb2').value);
+            var sum = parseInt(tb1) + parseInt(tb2);
+
+            // This checks if the input is NAN
+            if(isNaN(sum) == true){
+                var p = document.createElement("p");
+                var sum_text = document.createTextNode("You have inputed an invalid character")
+                p.appendChild(sum_text);
+                document.body.appendChild(p);
+
+                // insane feature
+                alert("You have inputed an invalid character"); 
+            }
+            document.querySelector('#tb3').setAttribute("value" , sum);  
+        });
+};
+
+    </script>
+</head>
+
+
+<body>
+    <form>
+        <input id = "tb1" type = "text">
+        <input id = "tb2" type = "text">
+        <input id = "tb3" type = "text">
+        <input id = "b1" type ="button" value = "GO!">
+    </form>
+</body>
+</html>
