@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <Title>Q2</Title>
+    <meta charset="UTF-8">
+
+    <script>
+
+        window.onload = function () {
+
+            tb1.addEventListener("click", function drawTheLine() {
+                var c = document.getElementById("Canvas");
+                var ctx = c.getContext("2d");
+                ctx.moveTo(0, 300);
+                ctx.lineTo(300, 0);
+                ctx.stroke();
+
+            });
+
+            tb2.addEventListener("click", function drawTheRect() {
+                var c = document.getElementById("Canvas");
+                var width = document.getElementById("Canvas").width;
+                var height = document.getElementById("Canvas").height;
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.rect(0, 0, width , height);
+                ctx.stroke();
+
+            });
+
+            tb3.addEventListener("click", function clearRect() {
+                var c = document.getElementById("Canvas");
+                var ctx = c.getContext("2d");
+                    ctx.clearRect(0,0,300,300);
+                    window.location.reload();
+            });
+        
+        
+        };
+
+    </script>
+</head>
+
+
+
+
+<body>
+    <canvas id="Canvas" width="300" height="300">
+
+    </canvas>
+
+    <form>
+        <input id="tb1" type="button" value = "Draw the line.">
+        <input id="tb2" type="button" value = "Draw the rect.">
+        <input id="tb3" type="button" value = "Clear rect.">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <Title>Q3</Title>
+    <meta charset="UTF-8">
+    <link rel="prefetch" href="./Images/image1.gif" as= "image">
+    <link rel="prefetch" id ="img2" href="./Images/image2.gif" as= "image">
+
+    <script>
+    window.onload = function () {
+
+    img1.addEventListener("mouseover", function() {
+        var img1 = document.getElementById("img1").src;
+        var img2 = document.getElementById("img2").src;
+        console.log("test");
+        
+        document.getElementById("img1").src = "./Images/image2.gif";
+       
+    });
+
+    img1.addEventListener("mouseout", function() {
+        var img1 = document.getElementById("img1").src;
+        var img2 = document.getElementById("img2").src;
+        console.log("test");
+        
+        document.getElementById("img1").src = "./Images/image1.gif";
+    
+    });
+}
+    </script>
+
+
+</head>
+
+
+
+
+<body>
+
+ <img src="./Images/image1.gif" id = "img1" alt= "cant load image">
+
+
+</body>
+
+</html>
