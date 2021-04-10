@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');/* NAVIGATION BAR STYLING */
+
+*{
+    box-sizing:border-box;
+}
+body,html{
+    height:100%
+}
+
+body{
+    padding:0;
+    background-color:white;
+    margin:0;
+}
+
+.menuPic-container {
+    max-width: 100%;
+    max-height: 100vh;
+    position: relative;
+    z-index:-100;
+    margin: auto;
+
+}
+.MenuPic{
+    height:100vh;
+    background-image: url("../img/menu_img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.MenuPicText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:350%;
+    outline: 5px dashed red;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+hr
+{
+    border:solid 1px darkgrey;
+    width: 96%;
+    color: darkgrey;
+    height: 1px;
+    z-index:3;
+
+}
+
+.menu-list-container{
+    position:relative;
+    background-color:white;
+    z-index:4;
+    display: grid;
+
+}
+
+.menu-list-title{
+    margin-top:30px;
+
+    font-size:300%;
+    font-family: 'Lato', sans-serif;
+    font-weight:900;
+    z-index:4;
+    background-color:white;
+    text-align: center;
+    color:darkgoldenrod;
+}
+
+.menu-list-item{
+    font-size:150%;
+    font-weight:400;
+    font-family: 'Lato', sans-serif;
+    z-index:4;
+    background-color:white;
+    text-align: center;
+    color:black;
+}
+
+.menu-list-item-description{
+    display:block;
+    font-size:100%;
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    z-index:4;
+    background-color:white;
+    text-align: center;
+    color:darkgrey;
+    font-style: italic;
+
+}
+
+.list-menu{
+    z-index:4;
+    background-color:white;
+}
+
+
+.box1{
+    background-image: url('../img/tres.jpg');
+    background-size:cover;
+    position: relative;
+    background-attachment: fixed;
+    height:40vh;
+    z-index:98;
+}
