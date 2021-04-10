@@ -2,9 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/pizza_favicon.png" type="image/x-icon">
+
+
+
 </head>
+<header>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <div class="brand" style="font-size: 200%; margin-left: 10%;">
+            Londisimio's
+        </div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html">Order online</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
 <body>
 
+<div class="menuPic-container">
+
+    <div class="MenuPic"></div>
+
+    <div class="MenuPicText">Contact us!</div>
+</div>
+
+
+
+<div class="BreakTitle" >
+    <span class="green">CON</span>
+    <span class="white">TACT</span>
+    <span class="red">US!</span>
+
+</div>
+
+<div class="contact_container">
+<form name = "contactForm" method="get" onsubmit="validation()" action="php/contact_form.php">
+    <label for="name">Fullname (required)</label>
+    <input type="text" id="name" name="fullname" placeholder="Your fullname..">
+
+    <label for="email">Email (required)</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="A subject...">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Your message..."></textarea>
+
+    <input type="submit" value="Submit">
+
+
+
+</form>
+</div>
+
+<div class="BreakTitle" >
+    <span class="white">Our Location</span>
+
+</div>
+
+
+
+
+<iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2383.8984963377134!2d-6.226072183620708!3d53.30926408518829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486709309a5b7149%3A0x80dd297b516d89b5!2sUCD%20School%20of%20Computer%20Science!5e0!3m2!1sen!2sie!4v1618079220261!5m2!1sen!2sie" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
 </body>
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-left">
+        <div class="footer_logo">LONDISIMO's</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Proin id bibendum eros, et scelerisque libero.
+            Nam tincidunt est non rutrum porta.
+            Pellentesque lobortis pellentesque purus ac lobortis.
+        </p>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+    <ul class="footer-right">
+        <li>
+            <h2>Information</h2>
+            <ul class="footer_row">
+                <li><a href="https://www.ucd.ie/">UCD Website</a></li>
+                <li><a href="https://github.com/LonesX/">My Github</a></li>
+
+
+            </ul>
+        </li>
+        <li class="links">
+            <h2>Useful Links</h2>
+
+            <ul class="footer_row">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html">Order online</a></li>
+            </ul>
+        </li>
+
+        <li class="Address">
+            <h2>Address</h2>
+
+            <ul class="footer_row">
+                <li>University College Dublin,</li>
+                <li>Belfield,</li>
+                <li>Dublin 4,</li>
+                <li>Ireland,</li>
+                <li>D04 V1W8</li>
+            </ul>
+        </li>
+
+    </ul>
+
+</footer>
+
+<script src ="js/navbar_scroll.js"></script>
+<script src="js/validator.js"></script>
 </html>

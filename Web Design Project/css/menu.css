@@ -19,6 +19,14 @@ body{
     position: relative;
     z-index:-100;
     margin: auto;
+
+}
+.MenuPic{
+    height:100vh;
+    background-image: url("../img/menu_img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .MenuPicText{
