@@ -1,3 +1,4 @@
+//this function checks if the form inputed was all correct info
 function validation() {
     var x = document.forms["contactForm"]["fullname"].value;
     var y = document.forms["contactForm"]["email"].value;
@@ -34,7 +35,7 @@ function validation() {
 
 
 
-    alert("Your form has successfully been submited");
+    alert("Your form has successfully been submited (InterfaceFiles/queries.txt/)");
     return true;
 }
 
