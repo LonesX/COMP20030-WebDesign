@@ -1,7 +1,6 @@
-# COMP20030 Project by Lones Xheladini (20331731).
+# COMP20030 Project by @LonesX.
 
 * Server Link : https://csserver.ucd.ie/~vezer21/Project/index.html
-* Server Username : vezer21
 
 
 
