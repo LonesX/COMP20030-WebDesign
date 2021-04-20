@@ -12,7 +12,7 @@ body{
     background-color:white;
     margin:0;
 }
-
+/*Main image picture*/
 .menuPic-container {
     max-width: 100%;
     max-height: 100vh;
@@ -28,7 +28,7 @@ body{
     background-position: center;
     background-size: cover;
 }
-
+/*Main picture text*/
 .MenuPicText{
     position: absolute;
     top: 50%;
@@ -39,7 +39,7 @@ body{
     outline: 5px dashed red;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
+/*page break*/
 hr
 {
     border:solid 1px darkgrey;
@@ -49,7 +49,7 @@ hr
     z-index:3;
 
 }
-
+/*menu list container*/
 .menu-list-container{
     position:relative;
     background-color:white;
@@ -58,6 +58,7 @@ hr
 
 }
 
+/*menu list title text */
 .menu-list-title{
     margin-top:30px;
 
@@ -69,7 +70,7 @@ hr
     text-align: center;
     color:darkgoldenrod;
 }
-
+/*menu list item text*/
 .menu-list-item{
     font-size:150%;
     font-weight:400;
@@ -80,6 +81,7 @@ hr
     color:black;
 }
 
+/*menu list text*/
 .menu-list-item-description{
     display:block;
     font-size:100%;
@@ -93,12 +95,13 @@ hr
 
 }
 
+/*list of menus*/
 .list-menu{
     z-index:4;
     background-color:white;
 }
 
-
+/*This is parallax scrolling image*/
 .box1{
     background-image: url('../img/tres.jpg');
     background-size:cover;

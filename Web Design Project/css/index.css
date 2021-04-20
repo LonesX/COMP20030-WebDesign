@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 /* NAVIGATION BAR STYLING */
+
 *{
     box-sizing:border-box;
 }
@@ -23,6 +24,7 @@ body{
     z-index:1;
     margin: auto;
 }
+/*This is the slideshow text */
 .slideshow-text{
     position: absolute;
     top: 50%;
@@ -33,6 +35,7 @@ body{
     outline: 5px dashed red;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
 
+/*Each slide image*/
 .slide1{
     height:100vh;
     background-image: url("../img/slideshow_img1.jpg");
@@ -69,6 +72,7 @@ body{
     display: none;
 }
 
+/*The previous and next buttons*/
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -85,6 +89,7 @@ body{
 
 }
 
+/*make it smaller when on phone*/
 @media only screen and (max-width: 700px) {
     .slideshow-text {
         font-size: 200%;
@@ -98,7 +103,7 @@ body{
 }
 
 
-
+/*Opening text*/
 .open{
     position: relative;
     padding: 35px 0;
@@ -119,6 +124,7 @@ body{
 
 }
 
+/*This is the parallax scrolling image*/
 .box1{
     background-image: url('../img/venice_img3.jpg');
     background-size:cover;
@@ -128,6 +134,7 @@ body{
     z-index:98;
 }
 
+/*story text*/
 .story{
     position:relative;
     z-index:97;
@@ -137,6 +144,7 @@ body{
     background-color: black ;
     padding: 10px;
 }
+
 span.green{
     color:green;
     margin:0;
@@ -152,7 +160,7 @@ span.red{
 
 }
 
-
+/*This is the styling for the history */
 .history{
     padding-right:10%;
     padding-left:10%;

@@ -11,6 +11,8 @@ body{
     background-color: whitesmoke;
     margin:0;
 }
+
+/*Main picture*/
 .menuPic-container {
     max-width: 100%;
     max-height: 100vh;
@@ -25,6 +27,8 @@ body{
     background-position: center;
     background-size: cover;
 }
+
+/*Main picture text*/
 .MenuPicText{
     position: absolute;
     top: 50%;
@@ -36,6 +40,7 @@ body{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+/*if on phone*/
 @media only screen and (max-width: 700px){
 
     .MenuPicText{
@@ -43,6 +48,7 @@ body{
     }
 }
 
+/*Italian stlye divider*/
 .BreakTitle{
     position:relative;
     z-index:3;
@@ -62,6 +68,7 @@ span.red{
     color:red;
 }
 
+/*Contact form styling*/
 .contact_container {
     border-radius: 5px;
     background-color: whitesmoke;
@@ -71,6 +78,7 @@ span.red{
 
 }
 
+/*the text*/
 input[type=text] , textarea{
     width: 100%;
     padding: 10px;
@@ -80,10 +88,12 @@ input[type=text] , textarea{
     resize:vertical;
 }
 
+/*The bigger text box*/
 textarea{
     height:150px;
 }
 
+/*Big green submit button */
 input[type=submit]{
     background-color: #4CAF50;
     border: none;
@@ -92,6 +102,7 @@ input[type=submit]{
     cursor: pointer;
 }
 
+/*big green submit button goes diff color when hovered*/
 input[type=submit]:hover {
     background-color: #45a049;
 }

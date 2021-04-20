@@ -39,13 +39,181 @@
 </header>
 
 <body>
+<!--main picture of the page-->
+
+<div class="menuPic-container">
+
+    <div class="MenuPic"></div>
+
+    <div class="MenuPicText">Order Online</div>
+</div>
+
+<!--Italian style divider-->
+<div class="BreakTitle" >
+    <span class="green">Pi</span>
+    <span class="white">zz</span>
+    <span class="red">a!</span>
+
+</div>
+
+<!--Parralax scrolling background-->
+<div class ="box1">
+</div>
+
+<!--Table for pizza-->
+<table class="pizzaTable">
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Add</th>
+    </tr>
+
+    <tr>
+        <td>Margherita</td>
+        <td>8.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(1)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>New York Pizza</td>
+        <td>8.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(2)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Chicken Pizza</td>
+        <td>8.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(3)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Pepperoni Pizza</td>
+        <td>10.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(4)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Vegetarian Pizza</td>
+        <td>12.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(5)">+</button></td>
+    </tr>
+</table>
+
+<!--Diviser-->
+<div class="BreakTitle" >
+    <span class="green">Si</span>
+    <span class="white">de</span>
+    <span class="red">s!</span>
+</div>
+<div class ="box1">
+</div>
+
+<!--sidestable table-->
+<table class="sidesTable">
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Add</th>
+    </tr>
+
+    <tr>
+        <td>Garlic Dip</td>
+        <td>1.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(6)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Chicken Dippers</td>
+        <td>2.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(7)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Garlic Bread</td>
+        <td>3.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(8)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Chicken Wings</td>
+        <td>4.20</td>
+        <td><button class="adder" type="submit" onclick="addCart(9)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Mozzarella Bites</td>
+        <td>4.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(10)">+</button></td>
+    </tr>
+</table>
+
+
+<!--Italian style diviser-->
+<div class="BreakTitle">
+    <span class="green">Dr</span>
+    <span class="white">in</span>
+    <span class="red">ks!</span>
+</div>
+
+<!--Parrallax scrolling background-->
+<div class ="box1">
+</div>
+
+<!--drinks table-->
+<table class="drinksTable">
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Add</th>
+    </tr>
+
+    <tr>
+        <td>Water</td>
+        <td>1.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(14)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Fanta</td>
+        <td>2.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(12)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Sprite</td>
+        <td>2.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(13)">+</button></td>
+    </tr>
+
+    <tr>
+        <td>Coca-Cola</td>
+        <td>2.99</td>
+        <td><button class="adder" type="submit" onclick="addCart(11)">+</button></td>
+    </tr>
+
+</table>
+
+<!-- This is the cart button-->
+    <div class="title">
+        <button class="cart" onclick="reveal('cartTable')" title="Cart"><i id="cartIMG" class="fa fa-shopping-cart"></i></button>
+    </div>
+<!--This form is used to give the form to the php-->
+<form id="checkoutForm" method="get" action="php/checkout.php">
+
+<table id="cartTable" style="display: none; ">
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Delete?</th>
+    </tr>
+
+</table>
+<button id="checkoutSubmit" type="submit" style="display:none;"><i class="fa fa-lock"></i> Checkout</button>
+</form>
+
+<button id="cartTotal" type="submit" onclick="reveal('cartTable')">Total:&nbsp;&euro;0.00</button>
 
 </body>
-
-
-
-
-
 
 
 <footer class="footer">
@@ -101,4 +269,6 @@
 </footer>
 
 <script src ="js/navbar_scroll.js"></script>
+<script src ="js/cart.js"></script>
+
 </html>

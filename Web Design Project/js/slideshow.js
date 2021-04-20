@@ -1,13 +1,14 @@
 
+    //This is to start the indexing at 1 so that first image is displayed
     let slideIndex = 1;
     showSlides(slideIndex);
 
 // Next/previous controls
-    function plusSlides(n) {
+    function nextSlide(n) {
         showSlides(slideIndex += n);
     }
 
-// Thumbnail image controls
+//  function shows the next slide in the slideshow containers
     function showSlides(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides");
