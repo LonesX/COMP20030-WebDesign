@@ -26,6 +26,7 @@
 
 ## Contact Page
 * It features a nice contact form which has specifc checks for
+
     1.If fullname field is empty
     2.If email field is empty
     3.If email isnt a valid email
