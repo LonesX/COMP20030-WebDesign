@@ -7,7 +7,7 @@
     var minute = d.getMinutes();
 
     //check to see if the store is open or not ( 12:00 - 22:00 )
-    if(hour >= 12 && minute >= 0 && hour <= 22 ){
+    if(hour >= 12 && minute >= 00 && hour <= 22 ){
         text = document.getElementById("opening");
         text.style.color = "green";
         text.textContent = "OPEN";
